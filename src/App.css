@@ -1,38 +1,176 @@
-.App {
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filtros label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filtros select {
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filtros button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filtros button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para la lista de mascotas */
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mascota {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mascota img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mascota h3 {
+  margin: 15px 0 5px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.mascota p {
+  color: #555;
+  font-size: 14px;
+}
+
+.mascota a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.mascota a:hover {
+  color: #0056b3;
+}
+
+/* Añadir espacio entre Ver más detalles y Adoptar */
+.mascota a {
+  display: block;
+  margin-bottom: 10px; /* Agregar espacio entre Ver más detalles y el botón Adoptar */
+}
+
+.adoptar-boton {
+  padding: 10px 15px;
+  background-color: #28a745;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-bottom: 15px; /* Agrega espacio debajo */
 }
 
-.App-link {
-  color: #61dafb;
+.adoptar-boton:hover {
+  background-color: #218838;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para formulario */
+.formulario {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centrar el formulario */
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+  text-align: left; /* Para alinear el texto del label a la izquierda */
+}
+
+.formulario input {
+  width: calc(100% - 20px); /* Reducir ancho de inputs para agregar espacio */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-right: 10px; /* Espacio a la derecha */
+}
+
+.formulario button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}
+
+.no-mascotas {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  margin-top: 20px;
 }
