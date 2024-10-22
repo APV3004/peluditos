@@ -108,7 +108,7 @@ function App() {
         <p className="no-mascotas">No se encontraron mascotas</p>
       )}
       
-      {/* Formulario de Adopción */}
+      
       {mascotaSeleccionada && (
         <Formulario mascota={mascotaSeleccionada} />
       )}
