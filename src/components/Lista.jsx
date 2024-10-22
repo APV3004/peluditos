@@ -16,7 +16,7 @@ const Lista = ({ mascotas, seleccionarMascota }) => {
           <a href={mascota.url} target="_blank" rel="noopener noreferrer">
             Ver más detalles
           </a>
-          {/* Botón de adoptar */}
+          
           <button className="adoptar-boton" onClick={() => seleccionarMascota(mascota)}>Adoptar</button>
         </div>
       ))}
